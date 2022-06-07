@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    grid-template-rows: auto;
+  }
+
+
+  .Main-page{
+      background-color: blue;
+      grid-area: main;
+  }
+  .Events{
+      background-color: blueviolet;
+      grid-area: events;
+  }
+
+  .Movie-collection{
+      background-color: brown;
+      grid-area: collections;
+  }
+
+.About-us{
+    background-color: aquamarine;
+    grid-area: about-us;
+}
+
+.Main__bg-video{
+    max-width: 100%;
+}
