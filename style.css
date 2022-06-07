@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: rgb(224, 217, 141);
+    color: rgb(246, 241, 196);
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 
-.Main-page {}
+
 
 .Events {
     background-color: blueviolet;
@@ -48,15 +48,32 @@ body {
     grid-auto-flow: column;
     z-index: 0;
     position: absolute;
-    justify-content: baseline;
-    color: aliceblue;
+    justify-items: center;
+    width: 100%;
+
 }
 
 .Main-page__logo{
     width: 80px;
 }
+.header__profile-icon,
+.header__list{
+display: grid;
+place-items: center;
+
+}
 
 ul{
-    list-style: none;
-    grid-auto-flow: column;
+   list-style: none; 
+   font-size: 20px;
+   
+}
+
+li{
+  display: inline-block;
+  padding-right: 35px;
+}
+
+.user-icon{
+    width: 30px;
 }
