@@ -31,6 +31,9 @@ body {
     background-color: aquamarine;
 }
 
+.main-page{
+    display: grid;
+}
 .Main-page__bg-video {
     display: grid;
 
@@ -76,4 +79,17 @@ li{
 
 .user-icon{
     width: 30px;
+}
+
+.Main-page__text{
+    display: grid;
+    grid-auto-flow: row;
+    z-index: 0;
+    padding: 20%;
+    position: absolute;
+    place-items: center;
+}
+h1{
+    font-size: 45px;
+    padding: 10px;
 }
