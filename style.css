@@ -3,33 +3,60 @@
     padding: 0;
     box-sizing: border-box;
     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(224, 217, 141);
 }
 
 body {
+    min-height: 100vh;
     margin: 0;
-    grid-template-rows: auto;
-  }
-
-
-  .Main-page{
-      background-color: blue;
-      grid-area: main;
-  }
-  .Events{
-      background-color: blueviolet;
-      grid-area: events;
-  }
-
-  .Movie-collection{
-      background-color: brown;
-      grid-area: collections;
-  }
-
-.About-us{
-    background-color: aquamarine;
-    grid-area: about-us;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: black;
 }
 
-.Main__bg-video{
-    max-width: 100%;
+
+.Main-page {}
+
+.Events {
+    background-color: blueviolet;
+
+}
+
+.Movie-collection {
+    background-color: brown;
+
+}
+
+.About-us {
+    background-color: aquamarine;
+}
+
+.Main-page__bg-video {
+    display: grid;
+
+}
+
+.Main__bg-video {
+    display: block;
+    width: 100%;
+    z-index: -1;
+    margin: auto;
+}
+
+.header {
+    display: grid;
+    grid-auto-flow: column;
+    z-index: 0;
+    position: absolute;
+    justify-content: baseline;
+    color: aliceblue;
+}
+
+.Main-page__logo{
+    width: 80px;
+}
+
+ul{
+    list-style: none;
+    grid-auto-flow: column;
 }
