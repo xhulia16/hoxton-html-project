@@ -140,7 +140,6 @@ p{
     object-fit: fill;
 
 }
-
 .Movie-collection__list{
     display: grid;
     grid-auto-flow: row;
@@ -149,5 +148,18 @@ p{
     justify-items: left;
     margin:70px;
     width: 100%;
+}
 
+.Movie-collection__list li{
+    padding-top: 30px;
+}
+
+.Movie-collection__list a{
+text-decoration: none;
+color:rgb(255, 247, 174);
+}
+
+.Movie-collection__title{
+    color:rgb(255, 247, 174);
+    font-size: 25px;
 }
