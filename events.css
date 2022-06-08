@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(246, 241, 196);
+    background-color: #050e03;
+}
+
+.Events__slides {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(5, 14, 3);
+    ;
+    border: 20px solid black;
+}
+
+.event__image {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.Event__text{
+    display: grid;
+    justify-content: center;
+    place-items: center;
+}
+
+.Event__register{
+    color:rgb(0, 7, 3);
+    font-size: medium;
+    background-color:rgb(255, 247, 174);
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+p{
+    width: 250px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
