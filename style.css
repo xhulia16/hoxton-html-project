@@ -132,11 +132,22 @@ p{
     padding-bottom: 20px;
 }
 
-.movie-collection__bg-video{
+.movie-collection__bg-image{
     display: block;
     width: 100%;
     z-index: -1;
     margin: auto;
     object-fit: fill;
-    border: solid 30px rgb(0, 7, 3);
+
+}
+
+.Movie-collection__list{
+    display: grid;
+    grid-auto-flow: row;
+    z-index: 0;
+    position: absolute;
+    justify-items: left;
+    margin:70px;
+    width: 100%;
+
 }
