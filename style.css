@@ -10,15 +10,10 @@ body {
     min-height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 1fr 500px 1fr 1fr;
+    grid-template-rows: 1fr 500px 600px 1fr;
     background-color: rgb(0, 7, 3);
 }
 
-
-.Movie-collection {
-    background-color: brown;
-
-}
 
 .About-us {
     background-color: aquamarine;
@@ -137,3 +132,11 @@ p{
     padding-bottom: 20px;
 }
 
+.movie-collection__bg-video{
+    display: block;
+    width: 100%;
+    z-index: -1;
+    margin: auto;
+    object-fit: fill;
+    border: solid 30px rgb(0, 7, 3);
+}
