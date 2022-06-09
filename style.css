@@ -170,9 +170,11 @@ color:rgb(255, 247, 174);
 
 .collection__poster{
     display: none;
+    transition: 2s;
 }
 
-.trending:hover > .collection__poster{
+
+.display-checkbox:checked ~ .collection__poster{
     display: grid;
     grid-auto-flow: column;
     width:fit-content;
@@ -180,4 +182,14 @@ color:rgb(255, 247, 174);
     position:absolute;
     z-index: 0;
     margin-left: 250px;
+}
+
+.display-checkbox{
+appearance: none;
+}
+
+.display-checkbox::before{
+content: "Trending";
+font-size: 20px;
+color:rgb(255, 247, 174);
 }
