@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: rgb(246, 241, 196);
+    scroll-behavior: smooth;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template: 
+    "header header" 300px
+    "left right";
+border: solid rgb(3, 17, 1) 50px;
+}
+.header{
+    grid-area: header;
+    background-color: red;
+}
+
+.left-menu{
+    grid-area: left;
+    background-color: aqua;
+}
+
+.right-menu{
+    grid-area: right;
+    background-color: yellow;
+}
