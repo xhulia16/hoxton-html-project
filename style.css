@@ -10,14 +10,11 @@ body {
     min-height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 1fr 500px 600px 1fr;
+    grid-template-rows: 1fr 500px 600px 500px;
     background-color: rgb(0, 7, 3);
 }
 
 
-.About-us {
-    background-color: aquamarine;
-}
 
 .main-page {
     display: grid;
@@ -220,4 +217,32 @@ p {
 .poster__list{
     display: grid;
     grid-auto-flow: column;
+}
+
+.About-us__bg-img{
+display: block;
+}
+
+.About-us {
+    border-top: 20px solid rgb(0, 7, 3);
+    background-color: rgb(0, 10, 5);;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 40px;
+    place-items: center;
+    color: rgb(255, 247, 174);
+}
+
+.About-us h2{
+    color: rgb(255, 245, 152);  
+}
+
+.About-us p{
+    color: rgb(255, 247, 174);  
+}
+
+.social-media-icons{
+    width: 40px;
+    padding:10px;
 }
