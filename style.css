@@ -111,28 +111,29 @@ h1 {
     justify-content: center;
 }
 
-.Event__text{
+.Event__text {
     display: grid;
     justify-content: center;
     place-items: center;
 }
 
-.Event__register{
-    color:rgb(0, 7, 3);
+.Event__register {
+    color: rgb(0, 7, 3);
     font-size: medium;
-    background-color:rgb(255, 247, 174);
+    background-color: rgb(255, 247, 174);
     width: 100px;
     padding: 5px;
     margin-bottom: 15px;
 }
-p{
+
+p {
     width: 250px;
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.movie-collection__bg-image{
+.movie-collection__bg-image {
     display: block;
     width: 100%;
     z-index: -1;
@@ -140,56 +141,70 @@ p{
     object-fit: fill;
 
 }
-.Movie-collection__list{
+
+.Movie-collection__list {
     display: grid;
-    grid-auto-flow: row;
+    grid-auto-flow: column;
     z-index: 0;
     position: absolute;
     justify-items: left;
-    margin:70px;
+    margin: 75px;
     width: 100%;
 }
 
-.Movie-collection__list li{
+.Movie-collection__list li {
     padding-top: 30px;
 }
 
-.Movie-collection__list a{
-text-decoration: none;
-color:rgb(255, 247, 174);
+.Movie-collection__list a {
+    text-decoration: none;
+    color: rgb(255, 247, 174);
 }
 
-.Movie-collection__title{
-    color:rgb(255, 247, 174);
+.Movie-collection__title {
+    color: rgb(255, 247, 174);
     font-size: 25px;
+    position: absolute;
+    left: 40%;
+    margin-top: 20px;
 }
 
-.poster{
-    width:100px;
+.poster {
+    width: 100px;
+    padding: 10px;
 }
 
-.collection__poster{
+.collection__poster {
     display: none;
     transition: 2s;
 }
 
 
-.display-checkbox:checked ~ .collection__poster{
+.display-checkbox:checked~.collection__poster {
     display: grid;
-    grid-auto-flow: column;
-    width:fit-content;
-    grid-gap:10px;
-    position:absolute;
+    grid-auto-flow: row;
+    width: fit-content;
+    padding: 10px;
+    grid-gap: 20px;
+    position: absolute;
     z-index: 0;
-    margin-left: 250px;
+    left: 400px;
+    top: 51px;
+    place-items: center;
+    background-color: #79564f5e;
 }
 
-.display-checkbox{
-appearance: none;
+.display-checkbox {
+    appearance: none;
 }
 
-.display-checkbox::before{
-content: "Trending";
-font-size: 20px;
-color:rgb(255, 247, 174);
+.display-checkbox::before {
+    content: "Trending";
+    font-size: 20px;
+    color: rgb(255, 247, 174);
+}
+
+.collection__poster__title {
+    color: rgb(255, 247, 174);
+    font-size: 25px;
 }
