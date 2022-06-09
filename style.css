@@ -163,3 +163,21 @@ color:rgb(255, 247, 174);
     color:rgb(255, 247, 174);
     font-size: 25px;
 }
+
+.poster{
+    width:100px;
+}
+
+.collection__poster{
+    display: none;
+}
+
+.trending:hover > .collection__poster{
+    display: grid;
+    grid-auto-flow: column;
+    width:fit-content;
+    grid-gap:10px;
+    position:absolute;
+    z-index: 0;
+    margin-left: 250px;
+}
