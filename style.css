@@ -149,15 +149,19 @@ p {
     justify-items: left;
     margin: 75px;
     width: 100%;
+   
 }
 
 .Movie-collection__list li {
     padding-top: 30px;
+    
 }
 
 .Movie-collection__list a {
     text-decoration: none;
     color: rgb(255, 247, 174);
+    background-color:#79564f5e; 
+    width: fit-content;
 }
 
 .Movie-collection__title {
