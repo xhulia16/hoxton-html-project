@@ -120,10 +120,27 @@ h1 {
     color: rgb(0, 7, 3);
     font-size: medium;
     background-color: rgb(255, 247, 174);
-    width: 100px;
+    width: 150px;
     padding: 5px;
     margin-bottom: 15px;
 }
+
+.Event__register:hover{
+    background-color: rgb(252, 240, 134);
+}
+
+.Event__register:active{
+    background-color: rgb(255, 242, 123);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.Event__register:focus{
+    background-color: rgb(62, 219, 41);
+    border: 1px solid rgb(255, 255, 255);
+    contain: "succesfully registered";
+
+}
+
 
 p {
     width: 250px;
