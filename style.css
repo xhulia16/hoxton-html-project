@@ -54,8 +54,18 @@ body {
 .header__list {
     display: grid;
     place-items: center;
-
 }
+
+.header__profile a:hover,
+.header__list a:hover{
+    color:rgb(252, 240, 134);
+}
+
+.header__profile a:active,
+.header__list a:active{
+    color:rgb(255, 247, 177);
+}
+
 
 ul {
     list-style: none;
@@ -100,6 +110,10 @@ h1 {
     justify-items: center;
     background-color: rgb(5, 14, 3);
     ;
+}
+
+.Events__slides:hover{
+    box-shadow: 1px 1px 20px 1px rgb(10, 29, 6);
 }
 
 .event__image {
@@ -178,9 +192,14 @@ p {
     text-decoration: none;
     color: rgb(255, 247, 174);
     background-color:#79564f5e; 
-    width: fit-content;
+    width: 100px;
 }
 
+.Movie-collection__list a:hover{ 
+    color: rgb(255, 250, 202);
+    background-color:#7e645f5e; 
+    width: 150px;
+}
 .Movie-collection__title {
     color: rgb(255, 247, 174);
     font-size: 25px;
@@ -199,7 +218,7 @@ p {
     transition: 2s;
 }
 
-.display-checkbox__two,
+
 .display-checkbox:checked~.collection__poster {
     display: grid;
     grid-auto-flow: row;
@@ -208,7 +227,7 @@ p {
     grid-gap: 20px;
     position: absolute;
     z-index: 0;
-    left:-60px;
+    left:-25px;
     top: 70px;
     place-items: center;
     background-color: #79564f5e;
@@ -219,12 +238,13 @@ p {
 }
 
 .display-checkbox::before {
-    content: "Recommended";
+    content: "Click for Recommended";
     font-size: 25px;
     color: rgb(255, 247, 174);
     padding: 5px;
     background-color: #79564f5e;
 }
+
 
 .collection__poster__title {
     color: rgb(255, 247, 174);
@@ -267,5 +287,11 @@ display: block;
 
 .social-media-icons{
     width: 50px;
+    padding:10px;
+    transition: 0.3s;
+}
+
+.social-media-icons:hover{
+    width: 53px;
     padding:10px;
 }
