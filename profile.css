@@ -22,7 +22,6 @@ overflow: hidden;
 .header{
     grid-area: header;
     display: grid;
-    justify-content: center;
     place-items: center;
 }
 
@@ -41,7 +40,11 @@ video{
 }
 
 .right-menu{
+    padding-top: 70px;
     grid-area: right;
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 10x;
 }
 
 ul{
@@ -80,4 +83,9 @@ button{
     width:250px;
     color: black;
     background-color: rgb(245, 237, 164);
+}
+
+p{
+width:600px;
+height: fit-content;
 }
