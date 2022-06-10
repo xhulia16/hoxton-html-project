@@ -39,7 +39,7 @@ body {
 .header {
     display: grid;
     grid-auto-flow: column;
-    z-index: 0;
+    z-index: 30;
     position: absolute;
     justify-items: center;
     width: 100%;
@@ -50,7 +50,7 @@ body {
     width: 80px;
 }
 
-.header__profile-icon,
+.header__profile,
 .header__list {
     display: grid;
     place-items: center;
@@ -68,9 +68,6 @@ li {
     padding-right: 35px;
 }
 
-.user-icon {
-    width: 30px;
-}
 
 .Main-page__text {
     display: grid;
