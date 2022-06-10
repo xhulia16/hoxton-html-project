@@ -295,3 +295,43 @@ display: block;
     width: 53px;
     padding:10px;
 }
+
+@media screen and (max-width: 800px) {
+    .header__list ul{
+        display: grid;
+        grid-auto-flow: row;
+        z-index: 30;
+        position: absolute;
+        justify-items: left;
+        overflow-x: hidden;
+        grid-gap:30px;
+}
+.header{
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 70px;
+    justify-content: left;
+    padding: 50px;
+margin-top: 60px;
+}
+.Main-page__logo{
+   display: none;
+}
+
+.header__profile a{
+    padding-top: 60px;
+    padding-right: 100px;
+}
+
+.Main-page__text {
+    display: grid;
+    grid-auto-flow: row;
+    z-index: 1;
+    padding: 0%;
+    margin-left: 40%;
+    margin-top: 20%;
+    position: absolute;
+    left:100px;
+}
+
+}
