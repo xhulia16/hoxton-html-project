@@ -3,29 +3,81 @@
     padding: 0;
     box-sizing: border-box;
     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: rgb(246, 241, 196);
+    color: rgb(245, 237, 164);
     scroll-behavior: smooth;
 }
 
 body{
     display: grid;
+    margin: 0px;
     min-height: 100vh;
     grid-template: 
-    "header header" 300px
+    "header header" 30px
     "left right";
-border: solid rgb(3, 17, 1) 50px;
+
+border: solid rgb(7, 3, 3) 50px;
+overflow: hidden;
 }
+
 .header{
     grid-area: header;
-    background-color: red;
+    display: grid;
+    justify-content: center;
+    place-items: center;
 }
+
+video{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    
+} 
 
 .left-menu{
     grid-area: left;
-    background-color: aqua;
+    margin-left: 40px;
+   
 }
 
 .right-menu{
     grid-area: right;
-    background-color: yellow;
+}
+
+ul{
+    padding: 30px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+li{
+    padding: 30px;
+}
+
+.language-options{
+    color: black;
+    width: 250px;
+    height:30px;
+    background-color: rgb(245, 237, 164);
+    font-size: 20px;
+}
+
+option{
+    color: black;
+}
+
+.language-label{
+    font-size: 30px;
+    width: fit-content;
+}
+
+button{
+    font-size: 20px;
+    width:250px;
+    color: black;
+    background-color: rgb(245, 237, 164);
 }
